@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(148, 38%, 91%);
+  padding: 2% 25%;
+  font-size: 16px;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 475px;
+}
+.main {
+  font-size: 0.8rem;
+}
+.container_name {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+input {
+  padding: 5px;
+}
+h1 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.label {
+  margin-bottom: 5px;
+}
+.label input {
+  width: 200px;
+}
+.email_label input {
+  width: 420px;
+  padding: 7px 0;
+}
+p {
+  font-size: 0.6rem;
+}
+.email {
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.query {
+  border-radius: 4px;
+  padding: 9px 15px;
+  border: 1px solid black;
+  width: 200px;
+  display: flex;
+  gap: 10px;
+}
+.main {
+  color: hsl(186, 15%, 59%);
+  /* cursor: pointer; */
+}
+.consent {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.message {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+textarea {
+  width: 420px;
+  padding: 10px;
+}
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: hsl(169, 82%, 27%);
+}
+.error-message {
+  display: none;
+  color: red;
+  font-size: 0.6rem;
+}
+.input-error {
+  border: 1px solid red !important;
+  border-radius: 2px;
+}
+.show-error {
+  display: block;
+}
+.success {
+  background-color: hsl(187, 24%, 22%);
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  display: none;
+  margin-left: 20%;
+}
+.sent_message {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+img {
+  width: 15px;
+}
+input {
+  cursor: pointer;
+  font-size: .8rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+#email{
+    padding-left: 10px;
+}
+input:hover {
+  border: 1.5px solid hsl(169, 82%, 27%);
+  border-radius: 2px;
+}
+.query:hover{
+    background-color: hsl(148, 38%, 91%);
+    border: 1.5px solid hsl(169, 82%, 27%);
+}
+.required::after{
+    content: "*";
+    color: hsl(169, 82%, 27%);
+    margin-left: 4px;
+}
+
+.success p {
+  color: hsl(186, 15%, 59%);
+}
+
+@media screen and (max-width: 800px) {
+   body {
+  padding: 3%;
+} 
+.container_name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.label input {
+  width: 260px;
+}
+.email_label input {
+  width: 260px;
+  padding: 6px 0;
+}
+.query {
+  width: 260px;
+}
+textarea {
+  width: 260px;
+  height: 200px;
+}
+}
