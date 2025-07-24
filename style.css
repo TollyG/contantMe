@@ -5,45 +5,48 @@
 }
 body {
   background-color: hsl(148, 38%, 91%);
-  padding: 2% 25%;
+  padding: 3% 30%;
   font-size: 16px;
 }
 .container {
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
-  padding: 20px;
-  max-width: 475px;
+  padding: 30px;
+  max-width: 600px;
 }
 .main {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 .container_name {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin-bottom: 20px;
-}
-input {
-  padding: 5px;
+  margin-bottom: 8px;
 }
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 .label {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .label input {
-  width: 200px;
+  width: 250px;
+  margin-top: 5px;
 }
 .email_label input {
-  width: 420px;
-  padding: 7px 0;
+  width: 525px;
+  padding: 10px 0;
+  margin-top: 5px;
 }
 p {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .email {
   margin-bottom: 20px;
+}
+.email_label{
+    margin-bottom: 8px;
 }
 h2 {
   font-size: 0.8rem;
@@ -53,9 +56,9 @@ h2 {
   border-radius: 4px;
   padding: 9px 15px;
   border: 1px solid black;
-  width: 200px;
+  width: 250px;
   display: flex;
-  gap: 10px;
+  gap: 25px;
 }
 .main {
   color: hsl(186, 15%, 59%);
@@ -71,13 +74,15 @@ h2 {
   margin-bottom: 20px;
 }
 textarea {
-  width: 420px;
+  width: 525px;
   padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 8px;
 }
 button {
   width: 100%;
   margin-top: 20px;
-  padding: 7px;
+  padding: 10px;
   border-radius: 5px;
   background-color: hsl(169, 82%, 27%);
 }
@@ -111,24 +116,25 @@ img {
 }
 input {
   cursor: pointer;
-  font-size: .8rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
 }
-#email{
-    padding-left: 10px;
+#email {
+  padding-left: 10px;
 }
 input:hover {
   border: 1.5px solid hsl(169, 82%, 27%);
   border-radius: 2px;
 }
-.query:hover{
-    background-color: hsl(148, 38%, 91%);
-    border: 1.5px solid hsl(169, 82%, 27%);
+.query:hover {
+  background-color: hsl(148, 38%, 91%);
+  border: 1.5px solid hsl(169, 82%, 27%);
 }
-.required::after{
-    content: "*";
-    color: hsl(169, 82%, 27%);
-    margin-left: 4px;
+.required::after {
+  content: "*";
+  color: hsl(169, 82%, 27%);
+  margin-left: 4px;
 }
 
 .success p {
@@ -136,27 +142,29 @@ input:hover {
 }
 
 @media screen and (max-width: 800px) {
-   body {
-  padding: 3%;
-} 
-.container_name {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-.label input {
-  width: 260px;
-}
-.email_label input {
-  width: 260px;
-  padding: 6px 0;
-}
-.query {
-  width: 260px;
-}
-textarea {
-  width: 260px;
-  height: 200px;
-}
+  body {
+    padding: 3%;
+  }
+  .container_name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .label input {
+    width: 400px;
+  }
+  .email_label input {
+    width: 400px;
+    padding: 10px 0;
+  }
+  .query {
+    width: 400px;
+  }
+  textarea {
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  
 }
